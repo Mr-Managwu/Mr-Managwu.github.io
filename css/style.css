@@ -6,7 +6,7 @@ Author: Samuel Dalusung
 
 /*= GENERAL STYLING
 --------------------------------------------------------*/
-
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Exo+2|Montserrat|Roboto');
 body{
 	margin: 0;
 	padding: 0;
@@ -141,44 +141,60 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 
 /*= SLIDES STYLING
 --------------------------------------------------------*/
-
+.background{
+    background-color:rgba(255,255,255,.5);
+    height:inherit;
+    padding: 5vh 0;  
+}
 #slide1, #slide2{ width: 100%; }
 #slide1{
-	background:url('../img/pexels-photo-877695.jpeg') 50% 0 no-repeat fixed;
-	color: #fff;
+background: url(../img/computer-device-electronics-872958.jpg) 70% 0 no-repeat fixed;
+       text-shadow:rgba(0,0,0,.2) .1px .3px 0px;
 	height: 100vh;
 	margin: 0;
 	padding: 0px 0 0px 0;
 	background-size: cover;
 }
 
-#slide2{
+#slide32{
 	background-color: #fff;
-	height: auto;
-	margin: 0 auto;
-	overflow: hidden;
-	padding: 10vmin 0 0 0;
+	height: 100vh;
+	margin:  auto;
+	padding: 0vmin 0 0 0;
 }
 
 #slide3{
-background-color: #3a4660;
+background-color: white;
 	color: #fff;
-	padding: 10vmin 0 5vmin 0;	
+	padding: 5vmin 0 5vmin 0;
+    height: 60vh;
+    margin: auto;
+   
     
 }
-
+#slide31{
+background-color: white;
+	color: #fff;
+	padding: 9vmin 0 0vmin 0;
+    height: 80vh;
+    margin: auto;
+   
+    
+}
 #slide4{
-	background-color: #fff;
+background: #141E30;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 	color: #333333;
 	padding: 10vmin 0 5vmin 0;
 }
 
 #slide5{
-	background-color: #Ed8a63;
-	padding: 10vmin 0 5vmin 0;
+background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%); 
 	color: #fff;
        box-shadow:inset 0px 0px 10px rgba(0,0,0,1);
-
+height: 100vh;
 }
 #slide6{
 	background: url(../img/pexels-photo-890577.jpeg) 70% 0 no-repeat fixed;
@@ -191,9 +207,54 @@ background-color: #3a4660;
     padding: 1vmin 0;
     margin: 0;
     color: black;
-         box-shadow:inset 0px 0px 10px rgba(0,0,0,1);
 }
 
+/*scroll to top */
+.scrolltop {
+	display:none;
+	width:100%;
+	margin:0 auto;
+	position:fixed;
+	bottom:20px;
+	right:10px;	
+    
+}
+.scroll {
+	position:absolute;
+    border-radius: 8px;
+	right:20px;
+	bottom:20px;
+	background:#b2b2b2;
+	background:rgba(178,178,178,0.7);
+	padding:20px;
+	text-align: center;
+	margin: 0 0 0 0;
+	cursor:pointer;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 		
+}
+.scroll:hover {
+	background:rgba(178,178,178,1.0);
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 		
+}
+.scroll:hover .fa {
+	padding-top:-10px;
+}
+.scroll .fa {
+	font-size:30px;
+	margin-top:-5px;
+	margin-left:1px;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 	
+}
+/*end of scroll to top */
 /*= my defined styles
 --------------------------------------------------------*/
 /*---------SLIDE 3------*/
@@ -275,10 +336,10 @@ background-color: #3a4660;
     /*= slide 1
 --------------------------------------------------------*/
 .content{ margin: 0 0%; width:100%;  text-align: center; }
-.background{
+.backgrounddark{
     background-color: rgba(0,0,0,.8); 
     height:inherit;
-    padding: 15vh 0;  
+    padding: 10vmin 0;  
 }
     @keyframes arrowdown{
     0%{
@@ -298,8 +359,14 @@ background-color: #3a4660;
     }
 }
 .group1{
-    font-family:sans-serif;
+font-family: 'Roboto', sans-serif;
     font-size: 7vh;
+    background: #000428;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    
 }
 .namecolor{
     color: #ed8a63;
@@ -317,8 +384,8 @@ background-color: #3a4660;
         0px 18px 23px rgba(0,0,0,0.1);
 }
 .myrow{
-    width: 100%;
-    margin:6vh 0 0 0;
+    width: 90%;
+    margin:6vh auto;
 }
 .myrow i{
   color:#c9af98;
@@ -376,6 +443,7 @@ background-color: #3a4660;
 .forimage{
     width:70%;
     margin: auto;
+    border-radius: 6px;
 }
 .img{
     width: 100%;
@@ -383,10 +451,10 @@ background-color: #3a4660;
 }
 .img2{
     border: solid .23vmax #3a4660;
-    padding: 1vmin;
+        padding: 1vmin;
     box-sizing: border-box;
     height: 35vh;
-    outline: solid #ed8a63 3px;
+    outline: solid #f28500 3px;
     outline-offset: 1vmin;
 }
 .text{
@@ -434,11 +502,7 @@ background-color: #3a4660;
     text-decoration: none;
     
 }
-.namesize{
-    font-size: 5vmax;
-    text-shadow:rgba(0,0,0,.6) .5px 1px 0px;
-    font-weight: 600;
-}
+
 .sub{
     color: #3a4660;
 }
@@ -457,9 +521,7 @@ background-color: #3a4660;
     font-size: 3.2vmax;
     text-shadow:rgba(0,0,0,.3) .5px 1px 0px;
 }
-.margin{
-    margin-top: 1vmax;
-}
+
 .aboutmetext{
     width: 90%;
        text-shadow:rgba(0,0,0,.2) .3px 1px 0px;
@@ -510,230 +572,7 @@ background-color: #3a4660;
     .brown{
     color: #ed8a63;
 }
-    /*------for progressbaras----*/
-    .setting{
-        width: 90%;
-        margin: auto;
-    }
-    .first{
-        width: 80%;
-    }
-    .progresst{
-        text-align: center;
-        font-size: 4vmin;
-         margin: 1.5vmax 0 0 0;
-        font-weight: 600;
-            text-shadow:rgba(0,0,0,.4) .1px .5px 0px;
-    }
-    progress{
-        width: 100%;
-        height: 2vmax;
-        margin: 2vmax 0 0 0;
-        -webkit-appearance:none;
-        appearance:none;
-        
-    }
-    progress::-webkit-progress-bar{
-        background-color: #ed8a63;
-         box-shadow:0px 10px 10px -10px #000;
-        border-radius: 6px;
-        box-shadow: 0 2px 5px rgba(0,0,0,.3) inset;
-    }
-      progress::-moz-progress-bar{
-        background-color: #ed8a63;
-        border-radius: 4px;
-        box-shadow: 0 2px 5px rgba(0,0,0,.3) inset;
-    }
-    progress::-webkit-progress-value{
-        background-color: white;
-         box-shadow:0px 10px 10px -10px #000;
-        border-radius: 6px;
   
-
-    }
-   
-    
-    /*------for circular bars-----*/
-    .progress-circle {
-   font-size: 1.4vmax;
-   margin: 7vmax auto;
-   position: relative; /* so that children can be absolutely positioned */
-   padding: 0;
-   width: 20vmax;
-   height: 20vmax;
-   background-color: white; 
-   border-radius: 50%;
-   line-height: 20vmax;
-         box-shadow:0px 10px 10px -10px #000;
-}
-
-.progress-circle:after{
-    border: none;
-    position: absolute;
-    top: .3em;
-    left: .3em;
-    text-align: center;
-    display: block;
-    border-radius: 50%;
-    width: 19vmax;
-    height: 19vmax;
-    background-color: #3a4660;
-    content: " ";
-}
-/* Text inside the control */
-.progress-circle span {
-    position: absolute;
-    line-height: 20vmax;
-    width: 20vmax;
-    text-align: center;
-    font-size: 9vmax;
-    display: block;
-    color: #ed8a63;
-    z-index: 2;
-}
-.left-half-clipper { 
-   /* a round circle */
-   border-radius: 50%;
-   width: 20vmax;
-   height: 20vmax;
-   position: absolute; /* needed for clipping */
-   clip: rect(0, 19vmax, 19vmax, 12.5vmax); /* clips the whole left half*/ 
-}
-/* when p>50, don't clip left half*/
-.progress-circle.over50 .left-half-clipper {
-   clip: rect(auto,auto,auto,auto);
-}
-.value-bar {
-   /*This is an overlayed square, that is made round with the border radius,
-   then it is cut to display only the left half, then rotated clockwise
-   to escape the outer clipping path.*/ 
-   position: absolute; /*needed for clipping*/
-   clip: rect(0, 14vmax,21vmax, 0);
-   width: 20.4vmax;
-   height: 20.2vmax;
-   border-radius: 50%;
-   border: 7vmax solid #ed8a63; /*The border is 0.35 but making it larger removes visual artifacts */
-   /*background-color: #4D642D;*/ /* for debug */
-   box-sizing: border-box;
-  
-}
-/* Progress bar filling the whole right half for values above 50% */
-.progress-circle.over50 .first50-bar {
-   /*Progress bar for the first 50%, filling the whole right half*/
-   position: absolute; /*needed for clipping*/
-   clip: rect(0, 17vmax, 17vmax, 9.5vmax);
-   background-color: #53777A;
-   border-radius: 50%;
-   width: 17vmax;
-   height: 17vmax;
-}
-.progress-circle:not(.over50) .first50-bar{ display: none; }
-
-
-/* Progress bar rotation position */
-.progress-circle.p0 .value-bar { display: none; }
-.progress-circle.p1 .value-bar { transform: rotate(4deg); }
-.progress-circle.p2 .value-bar { transform: rotate(7deg); }
-.progress-circle.p3 .value-bar { transform: rotate(11deg); }
-.progress-circle.p4 .value-bar { transform: rotate(14deg); }
-.progress-circle.p5 .value-bar { transform: rotate(18deg); }
-.progress-circle.p6 .value-bar { transform: rotate(22deg); }
-.progress-circle.p7 .value-bar { transform: rotate(25deg); }
-.progress-circle.p8 .value-bar { transform: rotate(29deg); }
-.progress-circle.p9 .value-bar { transform: rotate(32deg); }
-.progress-circle.p10 .value-bar { transform: rotate(36deg); }
-.progress-circle.p11 .value-bar { transform: rotate(40deg); }
-.progress-circle.p12 .value-bar { transform: rotate(43deg); }
-.progress-circle.p13 .value-bar { transform: rotate(47deg); }
-.progress-circle.p14 .value-bar { transform: rotate(50deg); }
-.progress-circle.p15 .value-bar { transform: rotate(54deg); }
-.progress-circle.p16 .value-bar { transform: rotate(58deg); }
-.progress-circle.p17 .value-bar { transform: rotate(61deg); }
-.progress-circle.p18 .value-bar { transform: rotate(65deg); }
-.progress-circle.p19 .value-bar { transform: rotate(68deg); }
-.progress-circle.p20 .value-bar { transform: rotate(72deg); }
-.progress-circle.p21 .value-bar { transform: rotate(76deg); }
-.progress-circle.p22 .value-bar { transform: rotate(79deg); }
-.progress-circle.p23 .value-bar { transform: rotate(83deg); }
-.progress-circle.p24 .value-bar { transform: rotate(86deg); }
-.progress-circle.p25 .value-bar { transform: rotate(90deg); }
-.progress-circle.p26 .value-bar { transform: rotate(94deg); }
-.progress-circle.p27 .value-bar { transform: rotate(97deg); }
-.progress-circle.p28 .value-bar { transform: rotate(101deg); }
-.progress-circle.p29 .value-bar { transform: rotate(104deg); }
-.progress-circle.p30 .value-bar { transform: rotate(108deg); }
-.progress-circle.p31 .value-bar { transform: rotate(112deg); }
-.progress-circle.p32 .value-bar { transform: rotate(115deg); }
-.progress-circle.p33 .value-bar { transform: rotate(119deg); }
-.progress-circle.p34 .value-bar { transform: rotate(122deg); }
-.progress-circle.p35 .value-bar { transform: rotate(126deg); }
-.progress-circle.p36 .value-bar { transform: rotate(130deg); }
-.progress-circle.p37 .value-bar { transform: rotate(133deg); }
-.progress-circle.p38 .value-bar { transform: rotate(137deg); }
-.progress-circle.p39 .value-bar { transform: rotate(140deg); }
-.progress-circle.p40 .value-bar { transform: rotate(144deg); }
-.progress-circle.p41 .value-bar { transform: rotate(148deg); }
-.progress-circle.p42 .value-bar { transform: rotate(151deg); }
-.progress-circle.p43 .value-bar { transform: rotate(155deg); }
-.progress-circle.p44 .value-bar { transform: rotate(158deg); }
-.progress-circle.p45 .value-bar { transform: rotate(162deg); }
-.progress-circle.p46 .value-bar { transform: rotate(166deg); }
-.progress-circle.p47 .value-bar { transform: rotate(169deg); }
-.progress-circle.p48 .value-bar { transform: rotate(173deg); }
-.progress-circle.p49 .value-bar { transform: rotate(176deg); }
-.progress-circle.p50 .value-bar { transform: rotate(180deg); }
-.progress-circle.p51 .value-bar { transform: rotate(184deg); }
-.progress-circle.p52 .value-bar { transform: rotate(187deg); }
-.progress-circle.p53 .value-bar { transform: rotate(191deg); }
-.progress-circle.p54 .value-bar { transform: rotate(194deg); }
-.progress-circle.p55 .value-bar { transform: rotate(198deg); }
-.progress-circle.p56 .value-bar { transform: rotate(202deg); }
-.progress-circle.p57 .value-bar { transform: rotate(205deg); }
-.progress-circle.p58 .value-bar { transform: rotate(209deg); }
-.progress-circle.p59 .value-bar { transform: rotate(212deg); }
-.progress-circle.p60 .value-bar { transform: rotate(216deg); }
-.progress-circle.p61 .value-bar { transform: rotate(220deg); }
-.progress-circle.p62 .value-bar { transform: rotate(223deg); }
-.progress-circle.p63 .value-bar { transform: rotate(227deg); }
-.progress-circle.p64 .value-bar { transform: rotate(230deg); }
-.progress-circle.p65 .value-bar { transform: rotate(234deg); }
-.progress-circle.p66 .value-bar { transform: rotate(238deg); }
-.progress-circle.p67 .value-bar { transform: rotate(241deg); }
-.progress-circle.p68 .value-bar { transform: rotate(245deg); }
-.progress-circle.p69 .value-bar { transform: rotate(248deg); }
-.progress-circle.p70 .value-bar { transform: rotate(252deg); }
-.progress-circle.p71 .value-bar { transform: rotate(256deg); }
-.progress-circle.p72 .value-bar { transform: rotate(259deg); }
-.progress-circle.p73 .value-bar { transform: rotate(263deg); }
-.progress-circle.p74 .value-bar { transform: rotate(266deg); }
-.progress-circle.p75 .value-bar { transform: rotate(270deg); }
-.progress-circle.p76 .value-bar { transform: rotate(274deg); }
-.progress-circle.p77 .value-bar { transform: rotate(277deg); }
-.progress-circle.p78 .value-bar { transform: rotate(281deg); }
-.progress-circle.p79 .value-bar { transform: rotate(284deg); }
-.progress-circle.p80 .value-bar { transform: rotate(288deg); }
-.progress-circle.p81 .value-bar { transform: rotate(292deg); }
-.progress-circle.p82 .value-bar { transform: rotate(295deg); }
-.progress-circle.p83 .value-bar { transform: rotate(299deg); }
-.progress-circle.p84 .value-bar { transform: rotate(302deg); }
-.progress-circle.p85 .value-bar { transform: rotate(306deg); }
-.progress-circle.p86 .value-bar { transform: rotate(310deg); }
-.progress-circle.p87 .value-bar { transform: rotate(313deg); }
-.progress-circle.p88 .value-bar { transform: rotate(317deg); }
-.progress-circle.p89 .value-bar { transform: rotate(320deg); }
-.progress-circle.p90 .value-bar { transform: rotate(324deg); }
-.progress-circle.p91 .value-bar { transform: rotate(328deg); }
-.progress-circle.p92 .value-bar { transform: rotate(331deg); }
-.progress-circle.p93 .value-bar { transform: rotate(335deg); }
-.progress-circle.p94 .value-bar { transform: rotate(338deg); }
-.progress-circle.p95 .value-bar { transform: rotate(342deg); }
-.progress-circle.p96 .value-bar { transform: rotate(346deg); }
-.progress-circle.p97 .value-bar { transform: rotate(349deg); }
-.progress-circle.p98 .value-bar { transform: rotate(353deg); }
-.progress-circle.p99 .value-bar { transform: rotate(356deg); }
-.progress-circle.p100 .value-bar { transform: rotate(360deg); }
-    /*------end of circular bars-----*/
-    
     .circular1{
         width: 80%;
         box-sizing: border-box;
@@ -763,7 +602,7 @@ background-color: #3a4660;
     }
     .text2{
         text-align: center;
-        color: #3a4660;
+ 
         font-weight: 600;
     }
     
@@ -867,11 +706,7 @@ background-color: #3a4660;
     /*= slide 1
 --------------------------------------------------------*/
 .content{ margin: 0 0%; width:100%;  text-align: center; }
-.background{
-    background-color: rgba(0,0,0,.8); 
-    height:inherit;
-    padding: 15vh 0;  
-}
+
     @keyframes arrowdown{
     0%{
         color:white;
@@ -890,8 +725,13 @@ background-color: #3a4660;
     }
 }
 .group1{
-    font-family:sans-serif;
+font-family: 'Roboto', sans-serif;
     font-size: 7vh;
+    background: #000428;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 .namecolor{
     color: #ed8a63;
@@ -966,6 +806,7 @@ background-color: #3a4660;
 .forimage{
     width:50%;
     margin: auto;
+    border-radius: 6px;
 }
 .img{
     width: 80%;
@@ -1024,11 +865,7 @@ background-color: #3a4660;
     text-decoration: none;
     
 }
-.namesize{
-    font-size: 4vmax;
-    text-shadow:rgba(0,0,0,.6) .5px 1px 0px;
-    font-weight: 600;
-}
+
 .sub{
     color: #3a4660;
 }
@@ -1048,7 +885,7 @@ background-color: #3a4660;
     text-shadow:rgba(0,0,0,.3) .5px 1px 0px;
 }
 .margin{
-    margin-top: 1vmax;
+margin: 3vmin 0;
 }
 .aboutmetext{
     width: 90%;
@@ -1113,213 +950,7 @@ background-color: #3a4660;
         font-weight: 600;
             text-shadow:rgba(0,0,0,.4) .1px .5px 0px;
     }
-    progress{
-        width: 100%;
-        height: 2vmax;
-        margin: .8vmax 0 0 0;
-        -webkit-appearance:none;
-        appearance:none;
-        
-    }
-    progress::-webkit-progress-bar{
-        background-color: #ed8a63;
-         box-shadow:0px 10px 10px -10px #000;
-        border-radius: 6px;
-        box-shadow: 0 2px 5px rgba(0,0,0,.3) inset;
-    }
-      progress::-moz-progress-bar{
-        background-color: #ed8a63;
-        border-radius: 4px;
-        box-shadow: 0 2px 5px rgba(0,0,0,.3) inset;
-    }
-    progress::-webkit-progress-value{
-        background-color: white;
-         box-shadow:0px 10px 10px -10px #000;
-        border-radius: 6px;
-    }
-   
-    
-    /*------for circular bars-----*/
-    .progress-circle {
-   font-size: 1.4vmax;
-   margin: 6vmax auto;
-   position: relative; /* so that children can be absolutely positioned */
-   padding: 0;
-   width: 19vmax;
-   height: 19vmax;
-   background-color: white; 
-   border-radius: 50%;
-   line-height: 19vmax;
-         box-shadow:0px 10px 10px -10px #000;
-}
 
-.progress-circle:after{
-    border: none;
-    position: absolute;
-    top: 0.35em;
-    left: 0.35em;
-    text-align: center;
-    display: block;
-    border-radius: 50%;
-    width: 18vmax;
-    height: 18vmax;
-    background-color: #3a4660;
-    content: " ";
-}
-/* Text inside the control */
-.progress-circle span {
-    position: absolute;
-    line-height: 19vmax;
-    width: 19vmax;
-    text-align: center;
-    font-size: 8vmax;
-    display: block;
-    color: #ed8a63;
-    z-index: 2;
-}
-.left-half-clipper { 
-   /* a round circle */
-   border-radius: 50%;
-   width: 19vmax;
-   height: 19vmax;
-   position: absolute; /* needed for clipping */
-   clip: rect(0, 19vmax, 19vmax, 11.5vmax); /* clips the whole left half*/ 
-}
-/* when p>50, don't clip left half*/
-.progress-circle.over50 .left-half-clipper {
-   clip: rect(auto,auto,auto,auto);
-}
-.value-bar {
-   /*This is an overlayed square, that is made round with the border radius,
-   then it is cut to display only the left half, then rotated clockwise
-   to escape the outer clipping path.*/ 
-   position: absolute; /*needed for clipping*/
-   clip: rect(0, 11.5vmax,19vmax, 0);
-   width: 19.2vmax;
-   height: 19vmax;
-   border-radius: 50%;
-   border: 8vmax solid #ed8a63; /*The border is 0.35 but making it larger removes visual artifacts */
-   /*background-color: #4D642D;*/ /* for debug */
-   box-sizing: border-box;
-  
-}
-/* Progress bar filling the whole right half for values above 50% */
-.progress-circle.over50 .first50-bar {
-   /*Progress bar for the first 50%, filling the whole right half*/
-   position: absolute; /*needed for clipping*/
-   clip: rect(0, 19vmax, 19vmax, 11.5vmax);
-   background-color: #53777A;
-   border-radius: 50%;
-   width: 19vmax;
-   height: 19vmax;
-}
-.progress-circle:not(.over50) .first50-bar{ display: none; }
-
-
-/* Progress bar rotation position */
-.progress-circle.p0 .value-bar { display: none; }
-.progress-circle.p1 .value-bar { transform: rotate(4deg); }
-.progress-circle.p2 .value-bar { transform: rotate(7deg); }
-.progress-circle.p3 .value-bar { transform: rotate(11deg); }
-.progress-circle.p4 .value-bar { transform: rotate(14deg); }
-.progress-circle.p5 .value-bar { transform: rotate(18deg); }
-.progress-circle.p6 .value-bar { transform: rotate(22deg); }
-.progress-circle.p7 .value-bar { transform: rotate(25deg); }
-.progress-circle.p8 .value-bar { transform: rotate(29deg); }
-.progress-circle.p9 .value-bar { transform: rotate(32deg); }
-.progress-circle.p10 .value-bar { transform: rotate(36deg); }
-.progress-circle.p11 .value-bar { transform: rotate(40deg); }
-.progress-circle.p12 .value-bar { transform: rotate(43deg); }
-.progress-circle.p13 .value-bar { transform: rotate(47deg); }
-.progress-circle.p14 .value-bar { transform: rotate(50deg); }
-.progress-circle.p15 .value-bar { transform: rotate(54deg); }
-.progress-circle.p16 .value-bar { transform: rotate(58deg); }
-.progress-circle.p17 .value-bar { transform: rotate(61deg); }
-.progress-circle.p18 .value-bar { transform: rotate(65deg); }
-.progress-circle.p19 .value-bar { transform: rotate(68deg); }
-.progress-circle.p20 .value-bar { transform: rotate(72deg); }
-.progress-circle.p21 .value-bar { transform: rotate(76deg); }
-.progress-circle.p22 .value-bar { transform: rotate(79deg); }
-.progress-circle.p23 .value-bar { transform: rotate(83deg); }
-.progress-circle.p24 .value-bar { transform: rotate(86deg); }
-.progress-circle.p25 .value-bar { transform: rotate(90deg); }
-.progress-circle.p26 .value-bar { transform: rotate(94deg); }
-.progress-circle.p27 .value-bar { transform: rotate(97deg); }
-.progress-circle.p28 .value-bar { transform: rotate(101deg); }
-.progress-circle.p29 .value-bar { transform: rotate(104deg); }
-.progress-circle.p30 .value-bar { transform: rotate(108deg); }
-.progress-circle.p31 .value-bar { transform: rotate(112deg); }
-.progress-circle.p32 .value-bar { transform: rotate(115deg); }
-.progress-circle.p33 .value-bar { transform: rotate(119deg); }
-.progress-circle.p34 .value-bar { transform: rotate(122deg); }
-.progress-circle.p35 .value-bar { transform: rotate(126deg); }
-.progress-circle.p36 .value-bar { transform: rotate(130deg); }
-.progress-circle.p37 .value-bar { transform: rotate(133deg); }
-.progress-circle.p38 .value-bar { transform: rotate(137deg); }
-.progress-circle.p39 .value-bar { transform: rotate(140deg); }
-.progress-circle.p40 .value-bar { transform: rotate(144deg); }
-.progress-circle.p41 .value-bar { transform: rotate(148deg); }
-.progress-circle.p42 .value-bar { transform: rotate(151deg); }
-.progress-circle.p43 .value-bar { transform: rotate(155deg); }
-.progress-circle.p44 .value-bar { transform: rotate(158deg); }
-.progress-circle.p45 .value-bar { transform: rotate(162deg); }
-.progress-circle.p46 .value-bar { transform: rotate(166deg); }
-.progress-circle.p47 .value-bar { transform: rotate(169deg); }
-.progress-circle.p48 .value-bar { transform: rotate(173deg); }
-.progress-circle.p49 .value-bar { transform: rotate(176deg); }
-.progress-circle.p50 .value-bar { transform: rotate(180deg); }
-.progress-circle.p51 .value-bar { transform: rotate(184deg); }
-.progress-circle.p52 .value-bar { transform: rotate(187deg); }
-.progress-circle.p53 .value-bar { transform: rotate(191deg); }
-.progress-circle.p54 .value-bar { transform: rotate(194deg); }
-.progress-circle.p55 .value-bar { transform: rotate(198deg); }
-.progress-circle.p56 .value-bar { transform: rotate(202deg); }
-.progress-circle.p57 .value-bar { transform: rotate(205deg); }
-.progress-circle.p58 .value-bar { transform: rotate(209deg); }
-.progress-circle.p59 .value-bar { transform: rotate(212deg); }
-.progress-circle.p60 .value-bar { transform: rotate(216deg); }
-.progress-circle.p61 .value-bar { transform: rotate(220deg); }
-.progress-circle.p62 .value-bar { transform: rotate(223deg); }
-.progress-circle.p63 .value-bar { transform: rotate(227deg); }
-.progress-circle.p64 .value-bar { transform: rotate(230deg); }
-.progress-circle.p65 .value-bar { transform: rotate(234deg); }
-.progress-circle.p66 .value-bar { transform: rotate(238deg); }
-.progress-circle.p67 .value-bar { transform: rotate(241deg); }
-.progress-circle.p68 .value-bar { transform: rotate(245deg); }
-.progress-circle.p69 .value-bar { transform: rotate(248deg); }
-.progress-circle.p70 .value-bar { transform: rotate(252deg); }
-.progress-circle.p71 .value-bar { transform: rotate(256deg); }
-.progress-circle.p72 .value-bar { transform: rotate(259deg); }
-.progress-circle.p73 .value-bar { transform: rotate(263deg); }
-.progress-circle.p74 .value-bar { transform: rotate(266deg); }
-.progress-circle.p75 .value-bar { transform: rotate(270deg); }
-.progress-circle.p76 .value-bar { transform: rotate(274deg); }
-.progress-circle.p77 .value-bar { transform: rotate(277deg); }
-.progress-circle.p78 .value-bar { transform: rotate(281deg); }
-.progress-circle.p79 .value-bar { transform: rotate(284deg); }
-.progress-circle.p80 .value-bar { transform: rotate(288deg); }
-.progress-circle.p81 .value-bar { transform: rotate(292deg); }
-.progress-circle.p82 .value-bar { transform: rotate(295deg); }
-.progress-circle.p83 .value-bar { transform: rotate(299deg); }
-.progress-circle.p84 .value-bar { transform: rotate(302deg); }
-.progress-circle.p85 .value-bar { transform: rotate(306deg); }
-.progress-circle.p86 .value-bar { transform: rotate(310deg); }
-.progress-circle.p87 .value-bar { transform: rotate(313deg); }
-.progress-circle.p88 .value-bar { transform: rotate(317deg); }
-.progress-circle.p89 .value-bar { transform: rotate(320deg); }
-.progress-circle.p90 .value-bar { transform: rotate(324deg); }
-.progress-circle.p91 .value-bar { transform: rotate(328deg); }
-.progress-circle.p92 .value-bar { transform: rotate(331deg); }
-.progress-circle.p93 .value-bar { transform: rotate(335deg); }
-.progress-circle.p94 .value-bar { transform: rotate(338deg); }
-.progress-circle.p95 .value-bar { transform: rotate(342deg); }
-.progress-circle.p96 .value-bar { transform: rotate(346deg); }
-.progress-circle.p97 .value-bar { transform: rotate(349deg); }
-.progress-circle.p98 .value-bar { transform: rotate(353deg); }
-.progress-circle.p99 .value-bar { transform: rotate(356deg); }
-.progress-circle.p100 .value-bar { transform: rotate(360deg); }
-    /*------end of circular bars-----*/
-    
     .circular1{
         width: 90%;
         margin: auto;
@@ -1350,7 +981,7 @@ background-color: #3a4660;
     }
     .text2{
         text-align: center;
-        color: #3a4660;
+        
         font-weight: 600;
     }
     
@@ -1419,11 +1050,7 @@ background-color: #3a4660;
     /*= slide 1
 --------------------------------------------------------*/
 .content{ margin: 0 0%; width:100%;  text-align: center; }
-.background{
-    background-color: rgba(0,0,0,.8); 
-    height:inherit;
-    padding: 15vh 0;  
-}
+
     @keyframes arrowdown{
     0%{
         color:white;
@@ -1442,8 +1069,13 @@ background-color: #3a4660;
     }
 }
 .group1{
-    font-family:sans-serif;
+font-family: 'Roboto', sans-serif;
     font-size: 7vh;
+    background: #000428;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 .namecolor{
     color: #ed8a63;
@@ -1461,8 +1093,8 @@ background-color: #3a4660;
         0px 18px 23px rgba(0,0,0,0.1);
 }
 .myrow{
-    width: 100%;
-    margin:6vh 0 0 0;
+    width: 90%;
+    margin:6vh auto;
 }
 .myrow i{
   color:#c9af98;
@@ -1518,6 +1150,7 @@ background-color: #3a4660;
 .forimage{
     width:70%;
     margin: auto;
+    border-radius: 6px;
 }
 .img{
     width: 100%;
@@ -1576,11 +1209,7 @@ background-color: #3a4660;
     text-decoration: none;
     
 }
-.namesize{
-    font-size: 3vmax;
-    text-shadow:rgba(0,0,0,.6) .5px 1px 0px;
-    font-weight: 600;
-}
+
 .sub{
     color: #3a4660;
 }
@@ -1600,7 +1229,7 @@ background-color: #3a4660;
     text-shadow:rgba(0,0,0,.3) .5px 1px 0px;
 }
 .margin{
-    margin-top: 1vmax;
+    margin: 3vmin 0;
 }
 .aboutmetext{
     width: 90%;
@@ -1666,215 +1295,7 @@ background-color: #3a4660;
         font-weight: 600;
             text-shadow:rgba(0,0,0,.4) .1px .5px 0px;
     }
-    progress{
-        width: 100%;
-        height: 1.5vmax;
-        margin: 2vmax 0 0 0;
-        -webkit-appearance:none;
-        appearance:none;
-        
-    }
-    progress::-webkit-progress-bar{
-        background-color: #ed8a63;
-         box-shadow:0px 10px 10px -10px #000;
-        border-radius: 6px;
-        box-shadow: 0 2px 5px rgba(0,0,0,.3) inset;
-    }
-      progress::-moz-progress-bar{
-        background-color: #ed8a63;
-        border-radius: 4px;
-        box-shadow: 0 2px 5px rgba(0,0,0,.3) inset;
-    }
-    progress::-webkit-progress-value{
-        background-color: white;
-         box-shadow:0px 10px 10px -10px #000;
-        border-radius: 6px;
-  
 
-    }
-   
-    
-    /*------for circular bars-----*/
-    .progress-circle {
-   font-size: 1.4vmax;
-   margin: 2vmax 6vmax;
-   position: relative; /* so that children can be absolutely positioned */
-   padding: 0;
-   width: 15vmax;
-   height: 15vmax;
-   background-color: white; 
-   border-radius: 50%;
-   line-height: 15vmax;
-         box-shadow:0px 10px 10px -10px #000;
-}
-
-.progress-circle:after{
-    border: none;
-    position: absolute;
-    top: 0.35em;
-    left: 0.35em;
-    text-align: center;
-    display: block;
-    border-radius: 50%;
-    width: 14vmax;
-    height: 14vmax;
-    background-color: #3a4660;
-    content: " ";
-}
-/* Text inside the control */
-.progress-circle span {
-    position: absolute;
-    line-height: 15vmax;
-    width: 15vmax;
-    text-align: center;
-    font-size: 4vmax;
-    display: block;
-    color: #ed8a63;
-    z-index: 2;
-}
-.left-half-clipper { 
-   /* a round circle */
-   border-radius: 50%;
-   width: 15vmax;
-   height: 15vmax;
-   position: absolute; /* needed for clipping */
-   clip: rect(0, 15vmax, 15vmax, 7.5vmax); /* clips the whole left half*/ 
-}
-/* when p>50, don't clip left half*/
-.progress-circle.over50 .left-half-clipper {
-   clip: rect(auto,auto,auto,auto);
-}
-.value-bar {
-   /*This is an overlayed square, that is made round with the border radius,
-   then it is cut to display only the left half, then rotated clockwise
-   to escape the outer clipping path.*/ 
-   position: absolute; /*needed for clipping*/
-   clip: rect(0, 7.5vmax,15vmax, 0);
-   width: 15vmax;
-   height: 15vmax;
-   border-radius: 50%;
-   border: 3vmax solid #ed8a63; /*The border is 0.35 but making it larger removes visual artifacts */
-   /*background-color: #4D642D;*/ /* for debug */
-   box-sizing: border-box;
-  
-}
-/* Progress bar filling the whole right half for values above 50% */
-.progress-circle.over50 .first50-bar {
-   /*Progress bar for the first 50%, filling the whole right half*/
-   position: absolute; /*needed for clipping*/
-   clip: rect(0, 15vmax, 15vmax, 7.5vmax);
-   background-color: #53777A;
-   border-radius: 50%;
-   width: 15vmax;
-   height: 15vmax;
-}
-.progress-circle:not(.over50) .first50-bar{ display: none; }
-
-
-/* Progress bar rotation position */
-.progress-circle.p0 .value-bar { display: none; }
-.progress-circle.p1 .value-bar { transform: rotate(4deg); }
-.progress-circle.p2 .value-bar { transform: rotate(7deg); }
-.progress-circle.p3 .value-bar { transform: rotate(11deg); }
-.progress-circle.p4 .value-bar { transform: rotate(14deg); }
-.progress-circle.p5 .value-bar { transform: rotate(18deg); }
-.progress-circle.p6 .value-bar { transform: rotate(22deg); }
-.progress-circle.p7 .value-bar { transform: rotate(25deg); }
-.progress-circle.p8 .value-bar { transform: rotate(29deg); }
-.progress-circle.p9 .value-bar { transform: rotate(32deg); }
-.progress-circle.p10 .value-bar { transform: rotate(36deg); }
-.progress-circle.p11 .value-bar { transform: rotate(40deg); }
-.progress-circle.p12 .value-bar { transform: rotate(43deg); }
-.progress-circle.p13 .value-bar { transform: rotate(47deg); }
-.progress-circle.p14 .value-bar { transform: rotate(50deg); }
-.progress-circle.p15 .value-bar { transform: rotate(54deg); }
-.progress-circle.p16 .value-bar { transform: rotate(58deg); }
-.progress-circle.p17 .value-bar { transform: rotate(61deg); }
-.progress-circle.p18 .value-bar { transform: rotate(65deg); }
-.progress-circle.p19 .value-bar { transform: rotate(68deg); }
-.progress-circle.p20 .value-bar { transform: rotate(72deg); }
-.progress-circle.p21 .value-bar { transform: rotate(76deg); }
-.progress-circle.p22 .value-bar { transform: rotate(79deg); }
-.progress-circle.p23 .value-bar { transform: rotate(83deg); }
-.progress-circle.p24 .value-bar { transform: rotate(86deg); }
-.progress-circle.p25 .value-bar { transform: rotate(90deg); }
-.progress-circle.p26 .value-bar { transform: rotate(94deg); }
-.progress-circle.p27 .value-bar { transform: rotate(97deg); }
-.progress-circle.p28 .value-bar { transform: rotate(101deg); }
-.progress-circle.p29 .value-bar { transform: rotate(104deg); }
-.progress-circle.p30 .value-bar { transform: rotate(108deg); }
-.progress-circle.p31 .value-bar { transform: rotate(112deg); }
-.progress-circle.p32 .value-bar { transform: rotate(115deg); }
-.progress-circle.p33 .value-bar { transform: rotate(119deg); }
-.progress-circle.p34 .value-bar { transform: rotate(122deg); }
-.progress-circle.p35 .value-bar { transform: rotate(126deg); }
-.progress-circle.p36 .value-bar { transform: rotate(130deg); }
-.progress-circle.p37 .value-bar { transform: rotate(133deg); }
-.progress-circle.p38 .value-bar { transform: rotate(137deg); }
-.progress-circle.p39 .value-bar { transform: rotate(140deg); }
-.progress-circle.p40 .value-bar { transform: rotate(144deg); }
-.progress-circle.p41 .value-bar { transform: rotate(148deg); }
-.progress-circle.p42 .value-bar { transform: rotate(151deg); }
-.progress-circle.p43 .value-bar { transform: rotate(155deg); }
-.progress-circle.p44 .value-bar { transform: rotate(158deg); }
-.progress-circle.p45 .value-bar { transform: rotate(162deg); }
-.progress-circle.p46 .value-bar { transform: rotate(166deg); }
-.progress-circle.p47 .value-bar { transform: rotate(169deg); }
-.progress-circle.p48 .value-bar { transform: rotate(173deg); }
-.progress-circle.p49 .value-bar { transform: rotate(176deg); }
-.progress-circle.p50 .value-bar { transform: rotate(180deg); }
-.progress-circle.p51 .value-bar { transform: rotate(184deg); }
-.progress-circle.p52 .value-bar { transform: rotate(187deg); }
-.progress-circle.p53 .value-bar { transform: rotate(191deg); }
-.progress-circle.p54 .value-bar { transform: rotate(194deg); }
-.progress-circle.p55 .value-bar { transform: rotate(198deg); }
-.progress-circle.p56 .value-bar { transform: rotate(202deg); }
-.progress-circle.p57 .value-bar { transform: rotate(205deg); }
-.progress-circle.p58 .value-bar { transform: rotate(209deg); }
-.progress-circle.p59 .value-bar { transform: rotate(212deg); }
-.progress-circle.p60 .value-bar { transform: rotate(216deg); }
-.progress-circle.p61 .value-bar { transform: rotate(220deg); }
-.progress-circle.p62 .value-bar { transform: rotate(223deg); }
-.progress-circle.p63 .value-bar { transform: rotate(227deg); }
-.progress-circle.p64 .value-bar { transform: rotate(230deg); }
-.progress-circle.p65 .value-bar { transform: rotate(234deg); }
-.progress-circle.p66 .value-bar { transform: rotate(238deg); }
-.progress-circle.p67 .value-bar { transform: rotate(241deg); }
-.progress-circle.p68 .value-bar { transform: rotate(245deg); }
-.progress-circle.p69 .value-bar { transform: rotate(248deg); }
-.progress-circle.p70 .value-bar { transform: rotate(252deg); }
-.progress-circle.p71 .value-bar { transform: rotate(256deg); }
-.progress-circle.p72 .value-bar { transform: rotate(259deg); }
-.progress-circle.p73 .value-bar { transform: rotate(263deg); }
-.progress-circle.p74 .value-bar { transform: rotate(266deg); }
-.progress-circle.p75 .value-bar { transform: rotate(270deg); }
-.progress-circle.p76 .value-bar { transform: rotate(274deg); }
-.progress-circle.p77 .value-bar { transform: rotate(277deg); }
-.progress-circle.p78 .value-bar { transform: rotate(281deg); }
-.progress-circle.p79 .value-bar { transform: rotate(284deg); }
-.progress-circle.p80 .value-bar { transform: rotate(288deg); }
-.progress-circle.p81 .value-bar { transform: rotate(292deg); }
-.progress-circle.p82 .value-bar { transform: rotate(295deg); }
-.progress-circle.p83 .value-bar { transform: rotate(299deg); }
-.progress-circle.p84 .value-bar { transform: rotate(302deg); }
-.progress-circle.p85 .value-bar { transform: rotate(306deg); }
-.progress-circle.p86 .value-bar { transform: rotate(310deg); }
-.progress-circle.p87 .value-bar { transform: rotate(313deg); }
-.progress-circle.p88 .value-bar { transform: rotate(317deg); }
-.progress-circle.p89 .value-bar { transform: rotate(320deg); }
-.progress-circle.p90 .value-bar { transform: rotate(324deg); }
-.progress-circle.p91 .value-bar { transform: rotate(328deg); }
-.progress-circle.p92 .value-bar { transform: rotate(331deg); }
-.progress-circle.p93 .value-bar { transform: rotate(335deg); }
-.progress-circle.p94 .value-bar { transform: rotate(338deg); }
-.progress-circle.p95 .value-bar { transform: rotate(342deg); }
-.progress-circle.p96 .value-bar { transform: rotate(346deg); }
-.progress-circle.p97 .value-bar { transform: rotate(349deg); }
-.progress-circle.p98 .value-bar { transform: rotate(353deg); }
-.progress-circle.p99 .value-bar { transform: rotate(356deg); }
-.progress-circle.p100 .value-bar { transform: rotate(360deg); }
-    /*------end of circular bars-----*/
-    
     .circular1{
         width: 90%;
         margin: auto;
@@ -1904,7 +1325,7 @@ background-color: #3a4660;
     }
     .text2{
         text-align: justify;
-        color: #3a4660;
+       
         font-weight: 600;
     }
     
@@ -1978,41 +1399,11 @@ background-color: #3a4660;
     /*----slide 7----*/
     .copyright{
         text-align: center;
-        font-size: 1.5vmax;
     }
-    @keyframes name{
-    0%{
-        color:white;
-    }
-    25%{
-        color:#ed8a63;
-    }
-    50%{
-        color: #3a4660;
-    }
-    75%{
-        color: #c9af98;
-    }
-    100%{
-        color: white;
-    }
-}
-    .forname{
-        animation: name;
-          animation-iteration-count: infinite;
-    animation-duration: 3s;
-        font-weight: 600;
-    animation-direction: alternate-reverse;
-    animation-timing-function: ease-in-out;
-         text-shadow:rgba(0,0,0,1) 1px 1px 0px;
-    }
+
     /*-----end of slide7---*/
     /*---------slide 1-----*/
-.background{
-    background-color: rgba(0,0,0,.8); 
-    height:inherit;
-    padding: 15vh;  
-}
+
 @keyframes arrowdown{
     0%{
         color:white;
@@ -2031,8 +1422,13 @@ background-color: #3a4660;
     }
 }
 .group1{
-    font-family:sans-serif;
+font-family: 'Roboto', sans-serif;
     font-size: 7vh;
+    background: #000428;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 .namecolor{
     color: #ed8a63;
@@ -2050,8 +1446,8 @@ background-color: #3a4660;
         0px 18px 23px rgba(0,0,0,0.1);
 }
 .myrow{
-    width: 100%;
-    margin:6vh 0 0 0;
+    width: 80%;
+    margin:6vh auto;
 }
 .myrow i{
   color:white;
@@ -2112,6 +1508,7 @@ background-color: #3a4660;
 .forimage{
     width:90%;
     margin: auto;
+    border-radius: 6px;
 }
 .img{
     width: 100%;
@@ -2170,11 +1567,7 @@ background-color: #3a4660;
     text-decoration: none;
     
 }
-.namesize{
-    font-size: 2vmax;
-    text-shadow:rgba(0,0,0,.6) .5px 1px 0px;
-    font-weight: 600;
-}
+
 .sub{
     color: #3a4660;
 }
@@ -2194,7 +1587,7 @@ background-color: #3a4660;
     text-shadow:rgba(0,0,0,.3) .5px 1px 0px;
 }
 .margin{
-    margin-top: 1vmax;
+    margin: 3vmin 0;
 }
 .aboutmetext{
     width: 100%;
@@ -2245,228 +1638,7 @@ background-color: #3a4660;
     .brown{
     color: #ed8a63;
 }
-    /*------for progressbaras----*/
-    .setting{
-        width: 90%;
-        margin: auto;
-    }
-    .first{
-        width: 80%;
-    }
-    .progresst{
-        text-align: center;
-        font-size: 1.5vmax;
-        font-weight: 600;
-            text-shadow:rgba(0,0,0,.4) .1px .5px 0px;
-    }
-    progress{
-        width: 100%;
-        height: 1vmax;
-        margin: .8vmax 0 0 0;
-        -webkit-appearance:none;
-        appearance:none;
-        
-    }
-    progress::-webkit-progress-bar{
-        background-color: #ed8a63;
-         box-shadow:0px 10px 10px -10px #000;
-        border-radius: 6px;
-        box-shadow: 0 2px 5px rgba(0,0,0,.3) inset;
-    }
-      progress::-moz-progress-bar{
-        background-color: #ed8a63;
-        border-radius: 4px;
-        box-shadow: 0 2px 5px rgba(0,0,0,.3) inset;
-    }
-    progress::-webkit-progress-value{
-        background-color: white;
-         box-shadow:0px 10px 10px -10px #000;
-        border-radius: 6px;
-  
-
-    }
    
-    
-    /*------for circular bars-----*/
-    .progress-circle {
-   font-size: 1.4vmax;
-   margin: 2vmax 6vmax;
-   position: relative; /* so that children can be absolutely positioned */
-   padding: 0;
-   width: 15vmax;
-   height: 15vmax;
-   background-color: white; 
-   border-radius: 50%;
-   line-height: 15vmax;
-         box-shadow:0px 10px 10px -10px #000;
-}
-
-.progress-circle:after{
-    border: none;
-    position: absolute;
-    top: 0.35em;
-    left: 0.35em;
-    text-align: center;
-    display: block;
-    border-radius: 50%;
-    width: 14vmax;
-    height: 14vmax;
-    background-color: #3a4660;
-    content: " ";
-}
-/* Text inside the control */
-.progress-circle span {
-    position: absolute;
-    line-height: 15vmax;
-    width: 15vmax;
-    text-align: center;
-    font-size: 4vmax;
-    display: block;
-    color: #ed8a63;
-    z-index: 2;
-}
-.left-half-clipper { 
-   /* a round circle */
-   border-radius: 50%;
-   width: 15vmax;
-   height: 15vmax;
-   position: absolute; /* needed for clipping */
-   clip: rect(0, 15vmax, 15vmax, 7.5vmax); /* clips the whole left half*/ 
-}
-/* when p>50, don't clip left half*/
-.progress-circle.over50 .left-half-clipper {
-   clip: rect(auto,auto,auto,auto);
-}
-.value-bar {
-   /*This is an overlayed square, that is made round with the border radius,
-   then it is cut to display only the left half, then rotated clockwise
-   to escape the outer clipping path.*/ 
-   position: absolute; /*needed for clipping*/
-   clip: rect(0, 7.5vmax,15vmax, 0);
-   width: 15vmax;
-   height: 15vmax;
-   border-radius: 50%;
-   border: 3vmax solid #ed8a63; /*The border is 0.35 but making it larger removes visual artifacts */
-   /*background-color: #4D642D;*/ /* for debug */
-   box-sizing: border-box;
-  
-}
-/* Progress bar filling the whole right half for values above 50% */
-.progress-circle.over50 .first50-bar {
-   /*Progress bar for the first 50%, filling the whole right half*/
-   position: absolute; /*needed for clipping*/
-   clip: rect(0, 15vmax, 15vmax, 7.5vmax);
-   background-color: #53777A;
-   border-radius: 50%;
-   width: 15vmax;
-   height: 15vmax;
-}
-.progress-circle:not(.over50) .first50-bar{ display: none; }
-
-
-/* Progress bar rotation position */
-.progress-circle.p0 .value-bar { display: none; }
-.progress-circle.p1 .value-bar { transform: rotate(4deg); }
-.progress-circle.p2 .value-bar { transform: rotate(7deg); }
-.progress-circle.p3 .value-bar { transform: rotate(11deg); }
-.progress-circle.p4 .value-bar { transform: rotate(14deg); }
-.progress-circle.p5 .value-bar { transform: rotate(18deg); }
-.progress-circle.p6 .value-bar { transform: rotate(22deg); }
-.progress-circle.p7 .value-bar { transform: rotate(25deg); }
-.progress-circle.p8 .value-bar { transform: rotate(29deg); }
-.progress-circle.p9 .value-bar { transform: rotate(32deg); }
-.progress-circle.p10 .value-bar { transform: rotate(36deg); }
-.progress-circle.p11 .value-bar { transform: rotate(40deg); }
-.progress-circle.p12 .value-bar { transform: rotate(43deg); }
-.progress-circle.p13 .value-bar { transform: rotate(47deg); }
-.progress-circle.p14 .value-bar { transform: rotate(50deg); }
-.progress-circle.p15 .value-bar { transform: rotate(54deg); }
-.progress-circle.p16 .value-bar { transform: rotate(58deg); }
-.progress-circle.p17 .value-bar { transform: rotate(61deg); }
-.progress-circle.p18 .value-bar { transform: rotate(65deg); }
-.progress-circle.p19 .value-bar { transform: rotate(68deg); }
-.progress-circle.p20 .value-bar { transform: rotate(72deg); }
-.progress-circle.p21 .value-bar { transform: rotate(76deg); }
-.progress-circle.p22 .value-bar { transform: rotate(79deg); }
-.progress-circle.p23 .value-bar { transform: rotate(83deg); }
-.progress-circle.p24 .value-bar { transform: rotate(86deg); }
-.progress-circle.p25 .value-bar { transform: rotate(90deg); }
-.progress-circle.p26 .value-bar { transform: rotate(94deg); }
-.progress-circle.p27 .value-bar { transform: rotate(97deg); }
-.progress-circle.p28 .value-bar { transform: rotate(101deg); }
-.progress-circle.p29 .value-bar { transform: rotate(104deg); }
-.progress-circle.p30 .value-bar { transform: rotate(108deg); }
-.progress-circle.p31 .value-bar { transform: rotate(112deg); }
-.progress-circle.p32 .value-bar { transform: rotate(115deg); }
-.progress-circle.p33 .value-bar { transform: rotate(119deg); }
-.progress-circle.p34 .value-bar { transform: rotate(122deg); }
-.progress-circle.p35 .value-bar { transform: rotate(126deg); }
-.progress-circle.p36 .value-bar { transform: rotate(130deg); }
-.progress-circle.p37 .value-bar { transform: rotate(133deg); }
-.progress-circle.p38 .value-bar { transform: rotate(137deg); }
-.progress-circle.p39 .value-bar { transform: rotate(140deg); }
-.progress-circle.p40 .value-bar { transform: rotate(144deg); }
-.progress-circle.p41 .value-bar { transform: rotate(148deg); }
-.progress-circle.p42 .value-bar { transform: rotate(151deg); }
-.progress-circle.p43 .value-bar { transform: rotate(155deg); }
-.progress-circle.p44 .value-bar { transform: rotate(158deg); }
-.progress-circle.p45 .value-bar { transform: rotate(162deg); }
-.progress-circle.p46 .value-bar { transform: rotate(166deg); }
-.progress-circle.p47 .value-bar { transform: rotate(169deg); }
-.progress-circle.p48 .value-bar { transform: rotate(173deg); }
-.progress-circle.p49 .value-bar { transform: rotate(176deg); }
-.progress-circle.p50 .value-bar { transform: rotate(180deg); }
-.progress-circle.p51 .value-bar { transform: rotate(184deg); }
-.progress-circle.p52 .value-bar { transform: rotate(187deg); }
-.progress-circle.p53 .value-bar { transform: rotate(191deg); }
-.progress-circle.p54 .value-bar { transform: rotate(194deg); }
-.progress-circle.p55 .value-bar { transform: rotate(198deg); }
-.progress-circle.p56 .value-bar { transform: rotate(202deg); }
-.progress-circle.p57 .value-bar { transform: rotate(205deg); }
-.progress-circle.p58 .value-bar { transform: rotate(209deg); }
-.progress-circle.p59 .value-bar { transform: rotate(212deg); }
-.progress-circle.p60 .value-bar { transform: rotate(216deg); }
-.progress-circle.p61 .value-bar { transform: rotate(220deg); }
-.progress-circle.p62 .value-bar { transform: rotate(223deg); }
-.progress-circle.p63 .value-bar { transform: rotate(227deg); }
-.progress-circle.p64 .value-bar { transform: rotate(230deg); }
-.progress-circle.p65 .value-bar { transform: rotate(234deg); }
-.progress-circle.p66 .value-bar { transform: rotate(238deg); }
-.progress-circle.p67 .value-bar { transform: rotate(241deg); }
-.progress-circle.p68 .value-bar { transform: rotate(245deg); }
-.progress-circle.p69 .value-bar { transform: rotate(248deg); }
-.progress-circle.p70 .value-bar { transform: rotate(252deg); }
-.progress-circle.p71 .value-bar { transform: rotate(256deg); }
-.progress-circle.p72 .value-bar { transform: rotate(259deg); }
-.progress-circle.p73 .value-bar { transform: rotate(263deg); }
-.progress-circle.p74 .value-bar { transform: rotate(266deg); }
-.progress-circle.p75 .value-bar { transform: rotate(270deg); }
-.progress-circle.p76 .value-bar { transform: rotate(274deg); }
-.progress-circle.p77 .value-bar { transform: rotate(277deg); }
-.progress-circle.p78 .value-bar { transform: rotate(281deg); }
-.progress-circle.p79 .value-bar { transform: rotate(284deg); }
-.progress-circle.p80 .value-bar { transform: rotate(288deg); }
-.progress-circle.p81 .value-bar { transform: rotate(292deg); }
-.progress-circle.p82 .value-bar { transform: rotate(295deg); }
-.progress-circle.p83 .value-bar { transform: rotate(299deg); }
-.progress-circle.p84 .value-bar { transform: rotate(302deg); }
-.progress-circle.p85 .value-bar { transform: rotate(306deg); }
-.progress-circle.p86 .value-bar { transform: rotate(310deg); }
-.progress-circle.p87 .value-bar { transform: rotate(313deg); }
-.progress-circle.p88 .value-bar { transform: rotate(317deg); }
-.progress-circle.p89 .value-bar { transform: rotate(320deg); }
-.progress-circle.p90 .value-bar { transform: rotate(324deg); }
-.progress-circle.p91 .value-bar { transform: rotate(328deg); }
-.progress-circle.p92 .value-bar { transform: rotate(331deg); }
-.progress-circle.p93 .value-bar { transform: rotate(335deg); }
-.progress-circle.p94 .value-bar { transform: rotate(338deg); }
-.progress-circle.p95 .value-bar { transform: rotate(342deg); }
-.progress-circle.p96 .value-bar { transform: rotate(346deg); }
-.progress-circle.p97 .value-bar { transform: rotate(349deg); }
-.progress-circle.p98 .value-bar { transform: rotate(353deg); }
-.progress-circle.p99 .value-bar { transform: rotate(356deg); }
-.progress-circle.p100 .value-bar { transform: rotate(360deg); }
-    /*------end of circular bars-----*/
     
     .circular1{
         width: 90%;
@@ -2502,13 +1674,11 @@ background-color: #3a4660;
     }
     .text2{
         text-align: justify;
-        color: #3a4660;
+    
         font-weight: 600;
     }
     
-.background2:hover .text2{
-   color: #ed8a63;
-    }
+
 /*----end of slide 4----*/
     /*------- slide 5 ----*/
       .portcolor{
@@ -2573,45 +1743,27 @@ background-color: #3a4660;
 }
 
 @media(min-width:1200px){
+    
+    .backgrounddark{
+     background-color: rgba(255,255,255,.8); 
+    height:inherit;
+    padding: 5% 0;  
+}
+    
+      .backgroundwht{
+    background-color: rgba(255,255,255,.2); 
+    height:inherit;
+    padding: 8vmin 0;  
+}
    /*----slide 7----*/
     .copyright{
         text-align: center;
-        font-size: 1.5vmax;
     }
-    @keyframes name{
-    0%{
-        color:white;
-    }
-    25%{
-        color:#ed8a63;
-    }
-    50%{
-        color: #3a4660;
-    }
-    75%{
-        color: #c9af98;
-    }
-    100%{
-        color: white;
-    }
-}
-    .forname{
-        animation: name;
-          animation-iteration-count: infinite;
-    animation-duration: 3s;
-        font-weight: 600;
-    animation-direction: alternate-reverse;
-    animation-timing-function: ease-in-out;
-         text-shadow:rgba(0,0,0,1) 1px 1px 0px;
-    }
+    
     /*-----end of slide7---*/
     /*-----slide1------*/
 
-.background{
-    background-color: rgba(0,0,0,.8); 
-    height:inherit;
-    padding: 15vh;  
-}
+
 @keyframes arrowdown{
     0%{
         color:white;
@@ -2629,16 +1781,8 @@ background-color: #3a4660;
         color: white;
     }
 }
-.group1{
-    font-family:sans-serif;
-    font-size: 7vh;
-}
-.namecolor{
-    color: #ed8a63;
-    text-shadow: 0px 4px 3px rgba(0,0,0,.4),
-        0px 8px 13px rgba(0,0,0,0.1),
-        0px 18px 23px rgba(0,0,0,0.1);
-}
+
+  
 #fortypewriter{
     font-family: monospace;
     font-weight: 800;
@@ -2655,7 +1799,7 @@ background-color: #3a4660;
     /*---- slide 6-----*/
 .myrow2{
     width: 80%;
-    margin:6vh 10% 0 10%;
+    margin:6vh auto;
 }
     .cntct{
         text-align: center;
@@ -2714,11 +1858,7 @@ background-color: #3a4660;
 .row2 i:hover{
     color: #ed8a63;
 }
-.row2{
-    width:40%;
-    margin: 6vh 30%;
-   
-}
+
 .arrow i{
     text-align: center;
     font-size: 10vh;
@@ -2750,18 +1890,19 @@ background-color: #3a4660;
 .forimage{
     width:90%;
     margin: auto;
+    border-radius: 6px;
 }
 .img{
     width: 100%;
     box-shadow:inset 0px 0px 10px rgba(0,0,0,1);
+    border-radius: 6px;
 }
 .img2{
-    border: solid .23vmax #3a4660;
-    padding: 1vmin;
+    border: solid .2vmax #f28500;
+    padding: .5vmin;
+    border-radius: 2px;
     box-sizing: border-box;
-    height: 50vh;
-    outline: solid #ed8a63 3px;
-    outline-offset: 1vmin;
+    height: 40vh;
 }
 .text{
     color: white;
@@ -2787,6 +1928,7 @@ background-color: #3a4660;
 }
 .forimage:hover .mymsg{
     height: 100%;
+    
 }
 .forfulldetails{
 
@@ -2808,11 +1950,6 @@ background-color: #3a4660;
     text-decoration: none;
     
 }
-.namesize{
-    font-size: 4.5vmin;
-    text-shadow:rgba(0,0,0,.6) .5px 1px 0px;
-    font-weight: 600;
-}
 .sub{
     color: #3a4660;
 }
@@ -2827,12 +1964,8 @@ background-color: #3a4660;
 .aboutsocial{
     width: 70%
 }
-.subsize{
-    font-size: 3.5vmin;
-    text-shadow:rgba(0,0,0,.3) .5px 1px 0px;
-}
 .margin{
-    margin-top: 1vmax;
+margin: 3vmin 0;
 }
 .aboutmetext{
     width: 100%;
@@ -2892,219 +2025,7 @@ background-color: #3a4660;
     .first{
         width: 80%;
     }
-    .progresst{
-        text-align: center;
-        font-size: 1.5vmax;
-        font-weight: 600;
-            text-shadow:rgba(0,0,0,.4) .1px .5px 0px;
-    }
-    progress{
-        width: 100%;
-        height: .8vmax;
-        margin: .8vmax 0 0 0;
-        -webkit-appearance:none;
-        appearance:none;
-        
-    }
-    progress::-webkit-progress-bar{
-        background-color: #ed8a63;
-         box-shadow:0px 10px 10px -10px #000;
-        border-radius: 6px;
-        box-shadow: 0 2px 5px rgba(0,0,0,.3) inset;
-    }
-      progress::-moz-progress-bar{
-        background-color: #ed8a63;
-        border-radius: 4px;
-        box-shadow: 0 2px 5px rgba(0,0,0,.3) inset;
-    }
-    progress::-webkit-progress-value{
-        background-color: white;
-         box-shadow:0px 10px 10px -10px #000;
-        border-radius: 6px;
-  
-
-    }
    
-    
-    /*------for circular bars-----*/
-    .progress-circle {
-   font-size: 1.4vmax;
-   margin: 2vmax 6vmax;
-   position: relative; /* so that children can be absolutely positioned */
-   padding: 0;
-   width: 15vmax;
-   height: 15vmax;
-   background-color: white; 
-   border-radius: 50%;
-   line-height: 15vmax;
-         box-shadow:0px 10px 10px -10px #000;
-}
-
-.progress-circle:after{
-    border: none;
-    position: absolute;
-    top: 0.35em;
-    left: 0.35em;
-    text-align: center;
-    display: block;
-    border-radius: 50%;
-    width: 14vmax;
-    height: 14vmax;
-    background-color: #3a4660;
-    content: " ";
-}
-/* Text inside the control */
-.progress-circle span {
-    position: absolute;
-    line-height: 15vmax;
-    width: 15vmax;
-    text-align: center;
-    font-size: 4vmax;
-    display: block;
-    color: #ed8a63;
-    z-index: 2;
-}
-.left-half-clipper { 
-   /* a round circle */
-   border-radius: 50%;
-   width: 15vmax;
-   height: 15vmax;
-   position: absolute; /* needed for clipping */
-   clip: rect(0, 15vmax, 15vmax, 7.5vmax); /* clips the whole left half*/ 
-}
-/* when p>50, don't clip left half*/
-.progress-circle.over50 .left-half-clipper {
-   clip: rect(auto,auto,auto,auto);
-}
-.value-bar {
-   /*This is an overlayed square, that is made round with the border radius,
-   then it is cut to display only the left half, then rotated clockwise
-   to escape the outer clipping path.*/ 
-   position: absolute; /*needed for clipping*/
-   clip: rect(0, 7.5vmax,15vmax, 0);
-   width: 15vmax;
-   height: 15vmax;
-   border-radius: 50%;
-   border: 3vmax solid #ed8a63; /*The border is 0.35 but making it larger removes visual artifacts */
-   /*background-color: #4D642D;*/ /* for debug */
-   box-sizing: border-box;
-  
-}
-/* Progress bar filling the whole right half for values above 50% */
-.progress-circle.over50 .first50-bar {
-   /*Progress bar for the first 50%, filling the whole right half*/
-   position: absolute; /*needed for clipping*/
-   clip: rect(0, 15vmax, 15vmax, 7.5vmax);
-   background-color: #53777A;
-   border-radius: 50%;
-   width: 15vmax;
-   height: 15vmax;
-}
-.progress-circle:not(.over50) .first50-bar{ display: none; }
-
-
-/* Progress bar rotation position */
-.progress-circle.p0 .value-bar { display: none; }
-.progress-circle.p1 .value-bar { transform: rotate(4deg); }
-.progress-circle.p2 .value-bar { transform: rotate(7deg); }
-.progress-circle.p3 .value-bar { transform: rotate(11deg); }
-.progress-circle.p4 .value-bar { transform: rotate(14deg); }
-.progress-circle.p5 .value-bar { transform: rotate(18deg); }
-.progress-circle.p6 .value-bar { transform: rotate(22deg); }
-.progress-circle.p7 .value-bar { transform: rotate(25deg); }
-.progress-circle.p8 .value-bar { transform: rotate(29deg); }
-.progress-circle.p9 .value-bar { transform: rotate(32deg); }
-.progress-circle.p10 .value-bar { transform: rotate(36deg); }
-.progress-circle.p11 .value-bar { transform: rotate(40deg); }
-.progress-circle.p12 .value-bar { transform: rotate(43deg); }
-.progress-circle.p13 .value-bar { transform: rotate(47deg); }
-.progress-circle.p14 .value-bar { transform: rotate(50deg); }
-.progress-circle.p15 .value-bar { transform: rotate(54deg); }
-.progress-circle.p16 .value-bar { transform: rotate(58deg); }
-.progress-circle.p17 .value-bar { transform: rotate(61deg); }
-.progress-circle.p18 .value-bar { transform: rotate(65deg); }
-.progress-circle.p19 .value-bar { transform: rotate(68deg); }
-.progress-circle.p20 .value-bar { transform: rotate(72deg); }
-.progress-circle.p21 .value-bar { transform: rotate(76deg); }
-.progress-circle.p22 .value-bar { transform: rotate(79deg); }
-.progress-circle.p23 .value-bar { transform: rotate(83deg); }
-.progress-circle.p24 .value-bar { transform: rotate(86deg); }
-.progress-circle.p25 .value-bar { transform: rotate(90deg); }
-.progress-circle.p26 .value-bar { transform: rotate(94deg); }
-.progress-circle.p27 .value-bar { transform: rotate(97deg); }
-.progress-circle.p28 .value-bar { transform: rotate(101deg); }
-.progress-circle.p29 .value-bar { transform: rotate(104deg); }
-.progress-circle.p30 .value-bar { transform: rotate(108deg); }
-.progress-circle.p31 .value-bar { transform: rotate(112deg); }
-.progress-circle.p32 .value-bar { transform: rotate(115deg); }
-.progress-circle.p33 .value-bar { transform: rotate(119deg); }
-.progress-circle.p34 .value-bar { transform: rotate(122deg); }
-.progress-circle.p35 .value-bar { transform: rotate(126deg); }
-.progress-circle.p36 .value-bar { transform: rotate(130deg); }
-.progress-circle.p37 .value-bar { transform: rotate(133deg); }
-.progress-circle.p38 .value-bar { transform: rotate(137deg); }
-.progress-circle.p39 .value-bar { transform: rotate(140deg); }
-.progress-circle.p40 .value-bar { transform: rotate(144deg); }
-.progress-circle.p41 .value-bar { transform: rotate(148deg); }
-.progress-circle.p42 .value-bar { transform: rotate(151deg); }
-.progress-circle.p43 .value-bar { transform: rotate(155deg); }
-.progress-circle.p44 .value-bar { transform: rotate(158deg); }
-.progress-circle.p45 .value-bar { transform: rotate(162deg); }
-.progress-circle.p46 .value-bar { transform: rotate(166deg); }
-.progress-circle.p47 .value-bar { transform: rotate(169deg); }
-.progress-circle.p48 .value-bar { transform: rotate(173deg); }
-.progress-circle.p49 .value-bar { transform: rotate(176deg); }
-.progress-circle.p50 .value-bar { transform: rotate(180deg); }
-.progress-circle.p51 .value-bar { transform: rotate(184deg); }
-.progress-circle.p52 .value-bar { transform: rotate(187deg); }
-.progress-circle.p53 .value-bar { transform: rotate(191deg); }
-.progress-circle.p54 .value-bar { transform: rotate(194deg); }
-.progress-circle.p55 .value-bar { transform: rotate(198deg); }
-.progress-circle.p56 .value-bar { transform: rotate(202deg); }
-.progress-circle.p57 .value-bar { transform: rotate(205deg); }
-.progress-circle.p58 .value-bar { transform: rotate(209deg); }
-.progress-circle.p59 .value-bar { transform: rotate(212deg); }
-.progress-circle.p60 .value-bar { transform: rotate(216deg); }
-.progress-circle.p61 .value-bar { transform: rotate(220deg); }
-.progress-circle.p62 .value-bar { transform: rotate(223deg); }
-.progress-circle.p63 .value-bar { transform: rotate(227deg); }
-.progress-circle.p64 .value-bar { transform: rotate(230deg); }
-.progress-circle.p65 .value-bar { transform: rotate(234deg); }
-.progress-circle.p66 .value-bar { transform: rotate(238deg); }
-.progress-circle.p67 .value-bar { transform: rotate(241deg); }
-.progress-circle.p68 .value-bar { transform: rotate(245deg); }
-.progress-circle.p69 .value-bar { transform: rotate(248deg); }
-.progress-circle.p70 .value-bar { transform: rotate(252deg); }
-.progress-circle.p71 .value-bar { transform: rotate(256deg); }
-.progress-circle.p72 .value-bar { transform: rotate(259deg); }
-.progress-circle.p73 .value-bar { transform: rotate(263deg); }
-.progress-circle.p74 .value-bar { transform: rotate(266deg); }
-.progress-circle.p75 .value-bar { transform: rotate(270deg); }
-.progress-circle.p76 .value-bar { transform: rotate(274deg); }
-.progress-circle.p77 .value-bar { transform: rotate(277deg); }
-.progress-circle.p78 .value-bar { transform: rotate(281deg); }
-.progress-circle.p79 .value-bar { transform: rotate(284deg); }
-.progress-circle.p80 .value-bar { transform: rotate(288deg); }
-.progress-circle.p81 .value-bar { transform: rotate(292deg); }
-.progress-circle.p82 .value-bar { transform: rotate(295deg); }
-.progress-circle.p83 .value-bar { transform: rotate(299deg); }
-.progress-circle.p84 .value-bar { transform: rotate(302deg); }
-.progress-circle.p85 .value-bar { transform: rotate(306deg); }
-.progress-circle.p86 .value-bar { transform: rotate(310deg); }
-.progress-circle.p87 .value-bar { transform: rotate(313deg); }
-.progress-circle.p88 .value-bar { transform: rotate(317deg); }
-.progress-circle.p89 .value-bar { transform: rotate(320deg); }
-.progress-circle.p90 .value-bar { transform: rotate(324deg); }
-.progress-circle.p91 .value-bar { transform: rotate(328deg); }
-.progress-circle.p92 .value-bar { transform: rotate(331deg); }
-.progress-circle.p93 .value-bar { transform: rotate(335deg); }
-.progress-circle.p94 .value-bar { transform: rotate(338deg); }
-.progress-circle.p95 .value-bar { transform: rotate(342deg); }
-.progress-circle.p96 .value-bar { transform: rotate(346deg); }
-.progress-circle.p97 .value-bar { transform: rotate(349deg); }
-.progress-circle.p98 .value-bar { transform: rotate(353deg); }
-.progress-circle.p99 .value-bar { transform: rotate(356deg); }
-.progress-circle.p100 .value-bar { transform: rotate(360deg); }
     /*------end of circular bars-----*/
     
     .circular1{
@@ -3132,25 +2053,16 @@ background-color: #3a4660;
     .background2:hover{
    background-color: #3a4660;
     }
-    .middle{
-        text-align: center;
-        padding: 2vmax;
-    }
+   
     .background2:hover .middle i,  .background2:hover .text1{
    color: white;
     }
-    .text1{
+  
+    .text2{
         text-align: center;
     }
-    .text2{
-        text-align: justify;
-        color: #3a4660;
-        font-weight: 600;
-    }
     
-.background2:hover .text2{
-   color: #ed8a63;
-    }
+
 /*----end of slide 4----*/
 
 /*-------slide 5------*/
@@ -3204,3 +2116,4 @@ body::-webkit-scrollbar-thumb{
 }
 #copyright  { color: #fff; font-family:"Wellfleet";  font-size: 14px; margin-top: 100px; text-align: center;  }
 #copyright  a { text-decoration: none; color: #fff;  }
+
